@@ -1,0 +1,295 @@
+:root {
+  --null_Black: #141414;
+  --null_Blue: #01D7E2;
+  --null_Purple: #D500FB;
+  --frame_width: 500px;
+  --frame_small: 425px;
+}
+
+#aboutMe {
+  margin-top: 120px;
+  padding-bottom: 30px;
+}
+
+#aboutMe p {
+  padding-bottom: 20px;
+}
+
+#contactButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+#contactButton button {
+  border: var(--null_Purple) solid 2px;
+  margin: 30px auto 10px auto;
+  background-color: var(--null_Black);
+  padding-bottom: 8px;
+  font-size: 26pt;
+}
+
+#contactButton button:hover {
+  color: #23527c;
+  border: #7f1b91 2px solid;
+}
+
+#heroBanner {
+  position: relative;
+  background-color: var(--null_Black)
+}
+
+#heroBanner img {
+  width: 100%;
+  height: auto;
+}
+
+#videos h2, #podcast h2 {
+  margin-bottom: 75px;
+}
+
+#podcast {
+  margin-bottom: 120px;
+}
+
+#podcast iframe {
+  height: 180px
+}
+
+.bordered {
+  border: var(--null_Blue) 2px solid;
+  margin: 0px;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  line-height: 100%;
+}
+
+.bordered:hover {
+  border: #23527C 2px solid;
+}
+
+.container {
+  width: 90%;
+}
+
+.info {
+  text-align: left;
+  align-items: end;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.info p {
+  width: 100%;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.servOpt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servOpt img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0px;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+html {
+  background-color: var(--null_Black);
+}
+ 
+body {
+  background-image: url('../webBG.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+main {
+  position: relative;
+  background-color: transparent;
+  border-bottom: var(--null_Purple) 2px solid;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2 {
+  font-weight: 600;
+  line-height: calc(1ex / 0.42);
+  color: var(--null_Blue);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 75%;
+  z-index: 1;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: var(--null_Purple) solid 2px;
+  margin: 30px auto;
+  font-size: 32pt;
+}
+
+h3, h4, h5, h6, p, button {
+  font-weight: 400;
+  line-height: calc(1ex / 0.38);
+  color: var(--null_Blue);
+  font-size: 32pt;
+}
+
+section {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+section p {
+  text-align: left;
+  width: 75%;
+  margin: 10px auto;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--null_Black);
+  padding-bottom: 30px;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  top: -50px;
+  background-color: var(--null_Black);
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+  border-bottom: var(--null_Purple) solid 2px;
+  transition: top 0.3s;
+}
+
+nav a {
+  color: var(--null_Blue);
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav img {
+  position: absolute;
+  left: 0px;
+  height: 50px;
+  top: 0px;
+}
+
+p, a {
+  font-weight: 400;
+  font-size: 20pt;
+  line-height: calc(1ex / 0.32);
+}
+
+p {
+  color: white;
+}
+
+button {
+  background-color: transparent;
+}
+
+/* Ratio is H = W * .56215 w400 h224*/
+iframe {
+  margin: 5px;
+  width: var(--frame_width);
+  height: calc(var(--frame_width) * .5625);
+  border: var(--null_Blue) 2px solid;
+  z-index: 2;
+}
+
+@media screen and (max-width: 950px) {
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav a {
+    font-size: 1.3em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  nav a {
+    font-size: 0.85em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  iframe {
+    margin: 5px;
+    width: var(--frame_small);
+    height: calc(var(--frame_small) * .5626);
+    border: var(--null_Blue) 2px solid;
+    z-index: 2;
+  }
+}
